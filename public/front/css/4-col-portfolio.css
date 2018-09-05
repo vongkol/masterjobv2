@@ -183,6 +183,7 @@ li {
 	font-size: 17px;
 	padding: 5px 15px;
 }
+
 .b {
 	border: 1px solid #BBDEFB;
 	padding: 5px;
@@ -194,7 +195,6 @@ li {
 	padding: 9px;
 	line-height: 1;
 }
-
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
     color: #111;
     font-weight: 700;
@@ -220,12 +220,18 @@ li {
 	font-size: 17px;
 }
 .search-box{
-    font-size: 23px;
-    padding: 16px 10px;
+    font-size: 20px;
+    padding: 11px 10px;
+}
+.salary-box {
+	width: 100px;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: 57px;
 }
 .search-button{
-    font-size: 23px;
-	width: 233px;
+    font-size: 20px;
+	width: 180px;
 	background: #0b79b6;
 }
 .search-job
@@ -236,6 +242,10 @@ li {
 .hr-d {
 	border: 2px solid #0b79b6;
 }
+.searchr {
+	width: 450px;
+}
+
 @media (min-width: 992px) {
 	body {
 		padding-top: 72px;
@@ -267,6 +277,9 @@ li {
 		font-weight: 700;
 		padding: 5px 24px;
 	}	
+	.searchr {
+		width: 200px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -290,6 +303,9 @@ li {
 		font-weight: 700;
 		padding: 5px 24px;
 	}	
+	.searchr {
+		width: 200px;
+	}
 }
 
 @media (max-width: 479px) {
@@ -364,6 +380,19 @@ li {
 		font-weight: 700;
 		padding: 5px 24px;
 	}	
+	.search-box {
+		font-size: 10px;
+	}
+	.salary-box {
+		width: 50px;
+	}
+	select.form-control:not([size]):not([multiple]) {
+		height: 33px;
+		font-size: 10px;
+	}
+	.searchr {
+		width: 70px;
+	}
 }
 
 @media (max-width: 360px) {

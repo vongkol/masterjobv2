@@ -122,7 +122,14 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="input-group">
-                            <input type="text" class="form-control search-box" placeholder="Keyword, Position, Location..." aria-label="Keyword, Position, Location..." aria-describedby="basic-addon2" name="q" id="q">
+                            <select name="category" id="" class="form-control location-box search-box">
+                                <option value="">category</option>
+                            </select>
+                            <select name="location" id="" class="form-control search-box location-box">
+                                <option value="">location</option>
+                            </select>
+                            <input type="text" class="search-box salary-box"  placeholder="200$">
+                            <input type="text" class=" search-box searchr" placeholder="Keyword..." aria-label="Keyword, Position, Location..." aria-describedby="basic-addon2" name="q" id="q">
                             <div class="input-group-append">
                                 <button class="btn btn-primary search-button" type="submit">{{trans('labels.search')}}</button>
                             </div>
