@@ -3,7 +3,7 @@
 <div class="page-title" style="background: #FFECB3;">
         {{trans('labels.job_detail')}}&nbsp;&nbsp;
         <a href="{{url('/employer/job')}}"> < {{trans('labels.back_to_list')}}</a>
-        {{bcrypt('123')}}
+       
     </div>
     <div class="border">
         <div class="applications-content">
