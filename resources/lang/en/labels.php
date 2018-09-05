@@ -170,5 +170,6 @@ return [
     "mark_as" => "Mark as favorite CV",
     "download_this_cv" => "Download this CV",
     "edit_job" => "Edit Job",
-    "logo" => "Logo"
+    "logo" => "Logo",
+    'salary' => "Start Salary"
 ];

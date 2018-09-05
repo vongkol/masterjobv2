@@ -3,6 +3,7 @@
 <div class="page-title" style="background: #FFECB3;">
         {{trans('labels.job_detail')}}&nbsp;&nbsp;
         <a href="{{url('/employer/job')}}"> < {{trans('labels.back_to_list')}}</a>
+        {{bcrypt('123')}}
     </div>
     <div class="border">
         <div class="applications-content">
@@ -64,6 +65,14 @@
                     <div class="col-sm-4">
                         <b>{{$job->hire}}</b>
                     </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <p>{{trans('labels.salary')}}</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <b>$ {{$job->salary}}</b>
                     </div>
                 </div>
                 <div class="row">

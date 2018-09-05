@@ -161,6 +161,6 @@ return [
     "download_this_cv" => "ទាញយក CV នេះ",
     "edit_job" => "កែប្រែការងារ",
     "search_result" => "លទ្ធផលស្វែងរក",
-    "video_training" => "វគ្គបណ្តុះបណ្តាលវីដេអូ"
-    
+    "video_training" => "វគ្គបណ្តុះបណ្តាលវីដេអូ",
+    'salary' => "ប្រាក់ខែចាប់ផ្តើម"
 ];

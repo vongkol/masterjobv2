@@ -126,7 +126,7 @@
             $("#list option:selected").remove();
         }
         function selectAll() {
-            $("#list option").prop("selected", false);
+            $("#list option").prop("selected", true);
             $("#list option").attr("selected", "selected");
             return true;
         }

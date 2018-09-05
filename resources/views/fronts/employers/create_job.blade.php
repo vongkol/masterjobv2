@@ -82,6 +82,12 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-sm-8">
+                        <label for="salary" class="control-label">{{trans('labels.salary')}}</label>
+                        <input type="number" class="form-control" name="salary" id="salary">
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-sm-12">
                         <label for="description" class="control-label">{{trans('labels.job_description')}}</label>
                         <textarea name="description" id="description" class="ckeditor" cols="30" rows="10">{{old('description')}}</textarea>
