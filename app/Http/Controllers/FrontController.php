@@ -238,4 +238,14 @@ class FrontController extends Controller
             ->paginate(14);
         return view('fronts.job_type', $data);
     }
+    public function training()
+    {
+        $data['trainings'] = DB::table('trainings')->orderBy('id', 'desc')->paginate(18);
+        return view('fronts.training', $data);
+    }
+    public function training_detail($id)
+    {
+        $data['training'] = DB::table('trainings')->where('id',$id)->first();
+        return view('fronts.training-detail', $data);
+    }
 }

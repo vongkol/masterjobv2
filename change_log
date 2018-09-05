@@ -1,2 +1,6 @@
 1 - add salary field to jobs table
 2 - update all job posting form with salary
+
+3 - add trainings table
+4 - add training in admin
+5 - add training in front end

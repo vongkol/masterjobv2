@@ -29,6 +29,8 @@ Route::get('/job/list', "FrontController@job_list");
 Route::get('/job/search', "FrontController@search");
 Route::get('/job/{id}', "FrontController@detail");
 
+Route::get('/front/training', 'FrontController@training');
+Route::get('/front/training/{id}', 'FrontController@training_detail');
 //employee email
 Route::get('/employee-email', 'EmployeeEmailController@index');
 
@@ -212,6 +214,14 @@ Route::post('/training-course/save', "TrainingCourseController@save");
 Route::get('/training-course/delete/{id}', "TrainingCourseController@delete");
 Route::get('/training-course/edit/{id}', "TrainingCourseController@edit");
 Route::post('/training-course/update', "TrainingCourseController@update");
+// training
+Route::get('/training', "TrainingController@index");
+Route::get('/training/create', "TrainingController@create");
+Route::get('/training/edit/{id}', "TrainingController@edit");
+Route::get('/training/delete/{id}', "TrainingController@delete");
+Route::get('/training/view/{id}', "TrainingController@view");
+Route::post('/training/save', "TrainingController@save1");
+Route::post('/training/update', "TrainingController@update");
 // video training 
 Route::get('/video-training', "VideoTrainingController@index");
 Route::get('/video-training/create', "VideoTrainingController@create");
