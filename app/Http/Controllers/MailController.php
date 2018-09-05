@@ -48,48 +48,43 @@ class MailController extends Controller
         return view("mails.create", $data);
     }
     public function send(Request $r)
-    {
-        dd($r->list);
-        // for($i=0;$i<count($r->list);$i++)
-        // {
-        //     if (!filter_var($r->list[$i], FILTER_VALIDATE_EMAIL)) 
-        //     {
-        //         continue;
-        //     }
-        //     try {
+    { 
+        for($i=0;$i<count($r->list);$i++)
+        {
+            try {
                 
-        //         $mail = new PHPMailer(true); // notice the \  you have to use root namespace here
-        //         $mail->isSMTP(); // tell to use smtp
-        //         $mail->CharSet = "utf-8"; // set charset to utf8
-        //         $mail->SMTPAuth = true;  // use smpt auth
-        //         $mail->SMTPSecure = "ssl"; // or ssl
-        //         $mail->MailerDebug = false;
-        //         $mail->Host = "gator4170.hostgator.com";
-        //         $mail->Port = 465; // most likely something different for you. This is the mailtrap.io port i use for testing.
-        //         $mail->Username = "service@masterjobscambodia.com";
-        //         $mail->Password = "Khmer@123";
-        //         $mail->setFrom("service@masterjobscambodia.com", "Master Jobs Cambodia Co., Ltd");
-        //         $mail->Subject = "MTC: ". $r->subject;
-        //         $mail->MsgHTML($r->description);
-        //         $mail->addAddress($r->list[$i]);
-        //         $mail->send();
-        //      } catch (phpmailerException $e) {
+                $mail = new PHPMailer(true); // notice the \  you have to use root namespace here
+                $mail->isSMTP(); // tell to use smtp
+                $mail->CharSet = "utf-8"; // set charset to utf8
+                $mail->SMTPAuth = true;  // use smpt auth
+                $mail->SMTPSecure = "ssl"; // or ssl
+                $mail->MailerDebug = false;
+                $mail->Host = "gator4170.hostgator.com";
+                $mail->Port = 465; // most likely something different for you. This is the mailtrap.io port i use for testing.
+                $mail->Username = "service@masterjobscambodia.com";
+                $mail->Password = "Khmer@123";
+                $mail->setFrom("service@masterjobscambodia.com", "Master Jobs Cambodia Co., Ltd");
+                $mail->Subject = "MTC: ". $r->subject;
+                $mail->MsgHTML($r->description);
+                $mail->addAddress($r->list[$i]);
+                $mail->send();
+             } catch (phpmailerException $e) {
    
-        //      } catch (Exception $e) {
+             } catch (Exception $e) {
 
-        //     }
+            }
           
-        // }
-        // // insert message to db
-        // $data = array(
-        //     "subject" => $r->subject,
-        //     "description" => $r->description,
-        //     "send_to" => ($r->send_to==0?'Employee':'Employer'),
-        //     "send_date" => date('Y-m-d')
-        // );
-        // DB::table("mails")->insert($data);
-        // $r->session()->flash("sms", "Emails have sent!");
-        // return redirect("/mail/create");
+        }
+        // insert message to db
+        $data = array(
+            "subject" => $r->subject,
+            "description" => $r->description,
+            "send_to" => ($r->send_to==0?'Employee':'Employer'),
+            "send_date" => date('Y-m-d')
+        );
+        DB::table("mails")->insert($data);
+        $r->session()->flash("sms", "Emails have sent!");
+        return redirect("/mail/create");
     }
     // get employee mail
     public function get_email($id)

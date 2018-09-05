@@ -696,7 +696,8 @@ class EmployerController extends Controller
             'hire' => $r->hire,
             'employer_id' => $employer->id,
             'description' => $r->description,
-            'requirement' => $r->requirement
+            'requirement' => $r->requirement,
+            'salary' => $r->salary
         ];
         $i = DB::table('jobs')->insert($data);
         if($i)
@@ -753,7 +754,8 @@ class EmployerController extends Controller
             'hire' => $r->hire,
             'employer_id' => $employer->id,
             'description' => $r->description,
-            'requirement' => $r->requirement
+            'requirement' => $r->requirement,
+            'salary' => $r->salary
         ];
         $i = DB::table('jobs')->where('id', $r->id)->update($data);
         if($i)
