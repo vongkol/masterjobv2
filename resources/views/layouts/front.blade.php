@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="Master Jobs Cambodia">
+        @yield('meta')
         <title>Master Jobs Cambodia</title>
         <script src="{{asset('front/vendor/jquery/jquery.min.js')}}"></script>
         <link href="{{asset('front/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -12,6 +12,14 @@
         <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
     </head>
     <body>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">

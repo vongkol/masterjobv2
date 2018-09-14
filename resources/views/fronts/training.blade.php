@@ -25,5 +25,11 @@
         </div>
         @endforeach
     </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p>&nbsp;</p>
+            {{$trainings->links()}}
+        </div>
+    </div>
     <p>&nbsp;</p>
 @endsection

@@ -1,4 +1,12 @@
 @extends('layouts.front')
+@section('meta')
+<meta property="og:image" content="{{asset('company/'.$company->logo)}}">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="350">
+<meta property="og:image:height" content="auto">
+<meta property="og:description" content="{{$job->job_title}} - {{$job->catname}}" />
+<meta name="description" content="{{$job->job_title}} - {{$job->catname}}">
+@endsection
 @section('content')
     
     <section>
@@ -108,6 +116,12 @@
                                         : {{$job->closing_date}}
                                     </div>
                                 </div>
+                               
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="fb-share-button" data-href="http://masterjobscambodia.com/job/{{$job->id}}" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmasterjobscambodia.com%2Fjob%2F{{$job->id}}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
                             </div>
                         </div>
                         <div class="row">
