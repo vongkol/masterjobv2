@@ -98,7 +98,7 @@ class ForgetPasswordController extends Controller
                 $r->session()->flash("sms1", "អុីម៉ែលរបស់អ្នកមិនមាននៅក្នុងប្រព័ន្ធយើងទេ!");
             
             }
-            return redirect('/employer/forgot')->withInput();
+            return redirect('buyer/account-recovery')->withInput();
         }
     }
     public function new_password1($id)

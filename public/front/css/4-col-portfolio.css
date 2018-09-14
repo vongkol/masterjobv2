@@ -219,6 +219,11 @@ li {
 	color: #000;
 	font-size: 17px;
 }
+.padding-search {
+	padding: 10px;
+	border-radius: 4px;
+	background: #fed521;
+}
 .search-box{
     font-size: 20px;
     padding: 11px 10px;
@@ -226,8 +231,8 @@ li {
 .salary-box {
 	width: 100px;
 }
-select.form-control:not([size]):not([multiple]) {
-    height: 57px;
+select.form-control, .keyword {
+    height: 47px!important;
 }
 .search-button{
     font-size: 20px;
