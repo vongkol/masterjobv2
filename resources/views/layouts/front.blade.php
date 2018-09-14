@@ -118,23 +118,33 @@
     
 
     <div class="container">
-      <form action="{{url('/job/search')}}" method="get" class="form-hozintal">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="input-group">
-                            <select name="category" id="" class="form-control location-box search-box">
+        <form action="{{url('/job/search')}}" method="get" class="form-hozintal">
+        <div class="col-md-12">
+                <div class="row padding-search">
+                    <div class="col-sm-3  px-1">
+                        <input type="text" class="form-control  search-box keyword" placeholder="Keyword..." aria-label="Keyword..." aria-describedby="basic-addon2" name="q" id="q">
+                    </div>
+                        <div class="col-sm-3 px-1">
+                            <select name="category" id="" class="form-control search-box">
                                 <option value="">category</option>
                             </select>
-                            <select name="location" id="" class="form-control search-box location-box">
+                        </div>
+                        <div class="col-md-2  px-1">
+                            <select name="location" id="" class="form-control search-box">
                                 <option value="">location</option>
                             </select>
-                            <input type="text" class="search-box salary-box"  placeholder="200$">
-                            <input type="text" class=" search-box searchr" placeholder="Keyword..." aria-label="Keyword, Position, Location..." aria-describedby="basic-addon2" name="q" id="q">
+                        </div>
+                        <div class="col-md-2  px-1">
+                            <select name="location" id="" class="form-control search-box">
+                                <option value="">Salary</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2  px-1">
                             <div class="input-group-append">
-                                <button class="btn btn-primary search-button" type="submit">{{trans('labels.search')}}</button>
+                                <button class="btn btn-primary search-button keyword" type="submit">{{trans('labels.search')}}</button>
                             </div>
                         </div>
-                    </div>
+                </div>
                 </div>
             </form>
         <p></p>
