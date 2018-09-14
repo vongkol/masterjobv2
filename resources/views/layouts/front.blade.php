@@ -29,7 +29,7 @@
                     <a class="nav-link" href="{{url('page/2')}}">{{trans("labels.about_us")}}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{url('page/3')}}">{{trans("labels.training")}}</a>
+                    <a class="nav-link" href="{{url('front/training')}}">{{trans("labels.training")}}</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="{{url('page/4')}}">{{trans("labels.recruitment")}}</a>

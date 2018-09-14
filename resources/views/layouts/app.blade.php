@@ -143,6 +143,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a href="{{url('/training')}}" class="nav-link">
+                        <i class="fa fa-book text-success"></i> Training Courses
+                    </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{{url('/page')}}">
                             <i class="fa fa-columns"></i> Page
                         </a>
