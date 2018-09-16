@@ -121,7 +121,11 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <div class="fb-share-button" data-href="http://masterjobscambodia.com/job/{{$job->id}}" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmasterjobscambodia.com%2Fjob%2F{{$job->id}}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                                <div class="fb-share-button" data-href="http://masterjobscambodia.com/job/{{$job->id}}" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fmasterjobscambodia.com%2Fjob%2F{{$job->id}}&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div> 
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://developer.linkedin.com&title=LinkedIn%20Developer%20Network
+                                &summary=My%20favorite%20developer%20program&source=LinkedIn" target="_blank">
+                                    <img src="{{asset('img/linkedin.png')}}" alt="" width="100" style="margin-top:-12px">
+                                </a>
                             </div>
                         </div>
                         <div class="row">
